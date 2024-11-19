@@ -18,10 +18,10 @@
   },
   "homepage": "https://github.com/nanzm/get-time-action#readme",
   "dependencies": {
-    "@actions/core": "^1.2.3",
-    "dayjs": "^1.8.23"
+    "@actions/core": "^1.11.1",
+    "dayjs": "^1.11.13"
   },
   "devDependencies": {
-    "@zeit/ncc": "0.22.3"
+    "@vercel/ncc": "0.38.3"
   }
 }
