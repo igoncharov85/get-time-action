@@ -15,14 +15,15 @@ async function main() {
 
 		let str;
 		if (Number.isInteger(timezone)) {
+			console.log("Offset: ", timezone)
 			str = dayjs().utcOffset(timezone).format(formatStr);
-			console.log("Via offset: ", str)
+			console.log("Via Offset: ", str)
 		}
 		else{
+			console.log("TZ: ", timezone)
 			str = dayjs().tz(timezone).format(formatStr);
-			console.log("Via tz: ", str)
+			console.log("Via TZ: ", str)
 		}
-
 
 		core.setOutput("time", str);
 
