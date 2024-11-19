@@ -27575,10 +27575,11 @@ async function main() {
 		console.log('time zone: ', timezone);
 		console.log('time format: ', formatStr);
 
+		const num = parseInt(timezone, 10);
 		let str;
-		if (Number.isInteger(timezone)) {
-			console.log("Offset: ", timezone);
-			str = dayjs().utcOffset(timezone).format(formatStr);
+		if (Number.isInteger(num)) {
+			console.log("Offset: ", num);
+			str = dayjs().utcOffset(num).format(formatStr);
 			console.log("Via Offset: ", str);
 		} else {
 			console.log("TZ: ", timezone);
